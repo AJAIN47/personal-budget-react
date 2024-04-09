@@ -18,7 +18,7 @@ const HomePage = () => {
 
   useEffect(() => {
     fetchBudgetData();
-  }, []);
+  }, [[fetchBudgetData]]);
 
   const drawChartJS = (budgetData) => {
     const ctx = document.getElementById("myChart");
